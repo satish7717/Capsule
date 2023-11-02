@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Q1. You can create an emulator to simulate the configuration of a particular type of Android device using a tool like ___.",
+    "options": [
+      "Theme Editor",
+      "Android SDK Manager",
+      "AVD Manager",
+      "Virtual Editor"
+    ],
+    "answer": "AVD Manager"
+  },
+  {
+    "question": "Q2. What parameter specifies the Android API level that Gradle should use to compile your app?",
+    "options": [
+      "minSdkVersion",
+      "compileSdkVersion",
+      "targetSdkVersion",
+      "testSdkVersion"
+    ],
+    "answer": "compileSdkVersion"
+  },
+  {
+    "question": "Q3. What phrase means that the compiler validates types while compiling?",
+    "options": [
+      "Type safety",
+      "Data binding",
+      "Type validation",
+      "Wrong text"
+    ],
+    "answer": "Type safety"
+  },
+  {
+    "question": "Q4. Which of the following is not true about fragments?",
+    "options": [
+      "A fragment has its own lifecycle and receives its own input events.",
+      "It is not possible to remove a fragment while the activity is running.",
+      "A fragment is defined in a Kotlin class.",
+      "A fragment's UI is defined in an XML layout file."
+    ],
+    "answer": "It is not possible to remove a fragment while the activity is running."
+  },
+  {
+    "question": "Q5. ___ is a way to restrict direct access to some of an object’s fields.",
+    "options": [
+      "Score",
+      "LiveData",
+      "Encapsulation",
+      "GameViewModel"
+    ],
+    "answer": "Encapsulation"
+  }
+]

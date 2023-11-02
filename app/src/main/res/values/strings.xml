@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Capsule Application</string>
+
+    <string name="timer">Timer</string>
+    <string name="check_answer">Check Answer</string>
+
+    <string name="video">Video</string>
+    <string name="notes">Notes</string>
+    <string name="quiz">Quiz</string>
+</resources>

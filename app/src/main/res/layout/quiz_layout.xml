@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_bg"
+            android:padding="10dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_bg"
+            android:padding="10dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/iv_right_arrow"
+            android:layout_toEndOf="@id/iv_left_arrow"
+            android:background="@drawable/quiz_button_selector"
+            android:enabled="false"
+            android:text="@string/check_answer"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/arrow_bg"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/baseline_refresh_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/baseline_message_24" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/ll_info">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:progressDrawable="@drawable/verticalprogressbar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ques_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_header">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_bg"
+            android:padding="10dp"
+            android:text="Sample Info about tech" />
+
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/answer_button_selector"
+                android:button="@null"
+                android:padding="5dp"
+                android:text="Sample Info"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/answer_button_selector"
+                android:button="@null"
+                android:padding="5dp"
+                android:text="Sample Info"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/answer_button_selector"
+                android:button="@null"
+                android:padding="5dp"
+                android:text="Sample Info"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/answer_button_selector"
+                android:button="@null"
+                android:padding="5dp"
+                android:text="Sample Info"
+                android:textColor="@android:color/black" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
